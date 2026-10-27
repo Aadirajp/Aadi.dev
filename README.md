@@ -1,8 +1,6 @@
-# Aadi.dev — Aditya Patil's Portfolio
-
 <div align="center">
 
-![Aditya Patil Portfolio](assets/images/aditya-avatar.png)
+<img src="assets/images/aditya-avatar.png" alt="Aditya Patil" width="320" style="border-radius: 20px; box-shadow: 0 16px 40px rgba(0,0,0,0.18); border: 2px solid #DFBF82;" />
 
 ### **Engineering Intelligent Systems & Quantitative Alpha**
 
