@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Patil — Engineering Intelligent Systems & Quantitative Alpha</title>
+  
+  <!-- SEO & Meta -->
+  <meta name="description" content="Portfolio of Aditya Patil: B.Tech Computer Science & AI student at Newton School of Technology (ADYPU, Pune), Software Developer, and Quantitative Research Consultant at WorldQuant BRAIN.">
+  <meta name="keywords" content="Aditya Patil, Quantitative Research, FASTEXPR, WorldQuant BRAIN, Graph Neural Networks, Suraag AI, Packwise AI, Club Aurex, Machine Learning, Full-Stack Developer">
+  <meta name="author" content="Aditya Patil">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Aditya Patil — Engineering Intelligent Systems & Quantitative Alpha">
+  <meta property="og:description" content="Explore production AI systems, forensic intelligence platforms, and mathematical alpha signal engineering by Aditya Patil.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/aditya-avatar.png">
+
+  <!-- Favicon Monogram -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23FAF7F2' stroke='%23B48C48' stroke-width='4'/><text x='50%' y='56%' dominant-baseline='middle' text-anchor='middle' font-family='serif' font-size='48' font-weight='bold' fill='%238E6B2D'>A</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Background Grain & Ambient Canvas -->
+  <div class="bg-grain-overlay"></div>
+  <canvas id="ambient-canvas"></canvas>
+  <div class="cursor-glow" id="cursor-glow"></div>
+
+  <!-- ===================================================================
+       NAVIGATION BAR
+       =================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Aditya Patil Homepage">
+        <div class="brand-monogram">A</div>
+        <span class="brand-text">Aadi<span class="brand-tag">.dev</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About & Stack</a></li>
+          <li><a href="#projects" class="nav-link">Featured Projects</a></li>
+          <li><a href="#quant" class="nav-link">Quant Alpha</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="nav-resume-btn" id="open-resume-btn" aria-label="View Resume Overview">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          Resume
+        </button>
+
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle Navigation Menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Slide Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about" class="mobile-nav-link">About & Stack</a>
+      <a href="#projects" class="mobile-nav-link">Featured Projects</a>
+      <a href="#quant" class="mobile-nav-link">Quant Alpha Console</a>
+      <a href="#experience" class="mobile-nav-link">Experience & Roles</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+      <button class="nav-resume-btn" id="mobile-resume-btn" style="width: 100%; justify-content: center; margin-top: 10px;">
+        View Detailed Resume
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================================================================
+         HERO SECTION
+         =================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <div class="hero-status-pill">
+              <span class="badge">
+                <span class="badge-dot"></span>
+                B.Tech CS & AI @ NST (ADYPU) • Quant Researcher
+              </span>
+            </div>
+
+            <h1 class="hero-title">
+              Engineering <span class="serif-flourish">Intelligent Systems</span> &amp; <span class="serif-flourish">Quantitative Alpha</span>
+            </h1>
+
+            <p class="hero-subtitle">
+              Hi, I’m <strong>Aditya Patil</strong>. A Computer Science &amp; Artificial Intelligence student at <strong>Newton School of Technology</strong> (ADYPU, Pune), software developer, and <strong>Quantitative Research Consultant</strong> at WorldQuant BRAIN — bridging Graph Neural Networks, autonomous architectures, and mathematical alpha signals.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary" id="hero-explore-btn">
+                Explore Projects
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                Get in Touch
+              </a>
+            </div>
+
+            <div class="hero-socials">
+              <a href="https://github.com/Aadirajp" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+
+              <a href="https://www.linkedin.com/in/aditya-patil-6306a5417/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile">
+                <svg viewBox="0 0 24 24">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+
+              <button class="email-copy-badge" id="copy-email-btn" title="Click to copy email address">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span id="copy-email-text">adityarajeshpatil08@gmail.com</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Real Portrait Frame -->
+          <div class="hero-portrait-wrapper">
+            <div class="portrait-frame">
+              <div class="portrait-img-inner">
+                <img src="assets/images/aditya-avatar.png" alt="Aditya Patil Portrait" class="portrait-img">
+              </div>
+
+              <!-- Floating Telemetry 1 -->
+              <div class="hero-floating-card card-top-right">
+                <div class="floating-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                  </svg>
+                </div>
+                <div class="floating-meta">
+                  <span class="floating-label">WorldQuant BRAIN</span>
+                  <span class="floating-val">FASTEXPR Alpha Engine</span>
+                </div>
+              </div>
+
+              <!-- Floating Telemetry 2 -->
+              <div class="hero-floating-card card-bottom-left">
+                <div class="floating-icon forest">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                </div>
+                <div class="floating-meta">
+                  <span class="floating-label">NST Developer Club</span>
+                  <span class="floating-val">Core Full-Stack &amp; AI</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 4 Live High-Impact Metrics -->
+        <div class="hero-stats-row">
+          <div class="stat-box">
+            <div class="stat-digit">3+</div>
+            <div class="stat-name">Production Deployments</div>
+            <div class="stat-desc">Forensic AI, MoFPI packaging, &amp; high-scale web apps</div>
+          </div>
+
+          <div class="stat-box">
+            <div class="stat-digit">TOP3000</div>
+            <div class="stat-name">US Equities Universe</div>
+            <div class="stat-desc">Formulaic alpha research in FASTEXPR syntax</div>
+          </div>
+
+          <div class="stat-box">
+            <div class="stat-digit">94.2%</div>
+            <div class="stat-name">Bayesian AI Confidence</div>
+            <div class="stat-desc">Multi-sensor crime reconstruction precision</div>
+          </div>
+
+          <div class="stat-box">
+            <div class="stat-digit">&lt; 12ms</div>
+            <div class="stat-name">Real-Time Inferences</div>
+            <div class="stat-desc">High-speed trajectory math &amp; graph neural logic</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         ABOUT & CORE STACK SECTION
+         =================================================================== -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge section-tag">Background &amp; Expertise</span>
+          <h2 class="section-title">The Engineering <span class="serif-flourish">Mindset</span></h2>
+          <p class="section-description">
+            Passionate about transforming high-order theoretical math and deep neural architectures into robust, production-grade systems with intuitive user experiences.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Bio Narrative -->
+          <div class="luxury-card about-card">
+            <p class="about-lead">
+              Driven by curiosity at the intersection of <span class="serif-flourish">autonomous intelligence</span>, distributed web infrastructure, and <span class="serif-flourish">quantitative finance</span>.
+            </p>
+
+            <p class="about-paragraph">
+              Currently pursuing a B.Tech in Computer Science &amp; Artificial Intelligence at Newton School of Technology (NST, ADYPU, Pune), my work spans engineering explainable crime-scene intelligence systems, bio-polymer shelf-life optimizers for the Government of India, and formulaic alpha generation models across US equities.
+            </p>
+
+            <p class="about-paragraph">
+              I believe software should be surgically precise, exceptionally fast, and visually compelling. Whether formulating cross-sectional Sharpe signals or designing 60 FPS interfaces, I focus on end-to-end execution that creates tangible real-world leverage.
+            </p>
+
+            <div class="about-features">
+              <div class="feature-item">
+                <div class="feature-bullet"></div>
+                <div>
+                  <h4>Graph Neural Networks</h4>
+                  <p>Entity extraction, node classification, and dynamic timeline forensics.</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-bullet"></div>
+                <div>
+                  <h4>Quantitative Alpha</h4>
+                  <p>FASTEXPR modeling, turnover optimization, and cross-sectional ranking.</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-bullet"></div>
+                <div>
+                  <h4>Full-Stack Mastery</h4>
+                  <p>High-performance frontend craft, REST/WebSocket APIs, and database design.</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-bullet"></div>
+                <div>
+                  <h4>Applied Problem Solving</h4>
+                  <p>Ministry-grade solutions and real-time interactive 3D simulations.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Core Stack Showcase -->
+          <div class="stack-column">
+            
+            <div class="stack-group-card">
+              <div class="stack-group-title">
+                <span>Core Languages &amp; Math</span>
+                <span>01</span>
+              </div>
+              <div class="skills-wrap">
+                <span class="skill-tag accent-highlight">Python</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">JavaScript (ES6+)</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Linear Algebra &amp; Statistics</span>
+              </div>
+            </div>
+
+            <div class="stack-group-card">
+              <div class="stack-group-title">
+                <span>Artificial Intelligence &amp; Quantitative</span>
+                <span>02</span>
+              </div>
+              <div class="skills-wrap">
+                <span class="skill-tag accent-highlight">Graph Neural Networks (GNN)</span>
+                <span class="skill-tag accent-highlight">FASTEXPR Syntax</span>
+                <span class="skill-tag">PyTorch</span>
+                <span class="skill-tag">NLP Entity Extraction</span>
+                <span class="skill-tag">Bayesian Fusion</span>
+                <span class="skill-tag">Pandas &amp; NumPy</span>
+                <span class="skill-tag">Statistical Arbitrage</span>
+              </div>
+            </div>
+
+            <div class="stack-group-card">
+              <div class="stack-group-title">
+                <span>Full-Stack &amp; Systems Architecture</span>
+                <span>03</span>
+              </div>
+              <div class="skills-wrap">
+                <span class="skill-tag">React.js / Next.js</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Three.js (3D WebGL)</span>
+                <span class="skill-tag">FastAPI / Express</span>
+                <span class="skill-tag">PostgreSQL / Supabase</span>
+                <span class="skill-tag">REST &amp; WebSockets</span>
+                <span class="skill-tag">Git / Linux / Docker</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         FEATURED PROJECTS SECTION (REAL PROJECT IMAGES ATTACHED)
+         =================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge section-tag">Engineered Solutions</span>
+          <h2 class="section-title">Featured <span class="serif-flourish">Production Projects</span></h2>
+          <p class="section-description">
+            Real-world systems solving national-scale challenges in forensic intelligence, eco-friendly food logistics, and athletic software.
+          </p>
+        </div>
+
+        <div class="projects-list">
+
+          <!-- PROJECT 1: SURAAG AI -->
+          <article class="project-item">
+            <div class="project-visual-col">
+              <div class="project-frame">
+                <div class="frame-browser-bar">
+                  <div class="browser-dots">
+                    <span class="b-dot"></span>
+                    <span class="b-dot"></span>
+                    <span class="b-dot"></span>
+                  </div>
+                  <div class="browser-address">https://suraag-ai.vercel.app/reconstruction</div>
+                </div>
+
+                <a href="https://suraag-ai.vercel.app/reconstruction" target="_blank" rel="noopener noreferrer" class="project-img-link">
+                  <img src="assets/images/suraag-ai-landing.png" alt="SURAAG AI Platform Screenshot" class="project-real-img" id="suraag-preview-img">
+                </a>
+              </div>
+
+              <!-- Switch Real Screenshots -->
+              <div class="project-secondary-preview">
+                <button class="secondary-thumb-btn active" onclick="switchProjectImage('suraag-preview-img', 'assets/images/suraag-ai-landing.png', this)">
+                  Platform Landing
+                </button>
+                <button class="secondary-thumb-btn" onclick="switchProjectImage('suraag-preview-img', 'assets/images/suraag-ai-tactical.png', this)">
+                  Tactical Command Center (Case-650C)
+                </button>
+              </div>
+            </div>
+
+            <div class="project-detail-col">
+              <div class="project-category-tag">National Defense &amp; Forensic Intelligence</div>
+              <h3 class="project-name">SURAAG AI</h3>
+              <p class="project-desc">
+                An Explainable AI-powered crime investigation platform designed for complex crime scene reconstruction, 3D physics trajectory simulation, witness statement validation, and multi-scenario probability analysis utilizing Graph Neural Networks and Bayesian sensor fusion.
+              </p>
+
+              <div class="project-kpi-row">
+                <div class="kpi-col">
+                  <span class="kpi-num">94.2%</span>
+                  <span class="kpi-name">Bayesian Confidence</span>
+                </div>
+                <div class="kpi-col">
+                  <span class="kpi-num">&lt; 12ms</span>
+                  <span class="kpi-name">Three.js Ballistics</span>
+                </div>
+                <div class="kpi-col">
+                  <span class="kpi-num">100%</span>
+                  <span class="kpi-name">Sight-Line Detection</span>
+                </div>
+              </div>
+
+              <div class="project-tools-wrap">
+                <span class="project-tool">Graph Neural Networks</span>
+                <span class="project-tool">Python</span>
+                <span class="project-tool">Three.js 3D</span>
+                <span class="project-tool">NLP Entity Extraction</span>
+                <span class="project-tool">Bayesian Fusion</span>
+                <span class="project-tool">FastAPI</span>
+              </div>
+
+              <div class="project-actions-row">
+                <a href="https://suraag-ai.vercel.app/reconstruction" target="_blank" rel="noopener noreferrer" class="btn-launch-live">
+                  Launch Command Center
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+                <a href="https://github.com/Aadirajp" target="_blank" rel="noopener noreferrer" class="btn-repo-link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  Repository
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: PACKWISE AI -->
+          <article class="project-item">
+            <div class="project-visual-col">
+              <div class="project-frame">
+                <div class="frame-browser-bar">
+                  <div class="browser-dots">
+                    <span class="b-dot"></span>
+                    <span class="b-dot"></span>
+                    <span class="b-dot"></span>
+                  </div>
+                  <div class="browser-address">https://packwise-mofpi.vercel.app/</div>
+                </div>
+
+                <a href="https://packwise-mofpi.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-img-link">
+                  <img src="assets/images/packwise-ai-platform.png" alt="PACKWISE AI Ministry Platform Screenshot" class="project-real-img">
+                </a>
+              </div>
+            </div>
+
+            <div class="project-detail-col">
+              <div class="project-category-tag">Govt of India • MoFPI • SIH26236</div>
+              <h3 class="project-name">PACKWISE AI (EcoPack AI)</h3>
+              <p class="project-desc">
+                An intelligent food preservation packaging recommendation platform engineered for the Ministry of Food Processing Industries (MoFPI). Designed to slash post-harvest crop losses and replace single-use plastics with certified sustainable bio-polymers using predictive shelf-life modeling and PMFME capital grant subsidy calculations.
+              </p>
+
+              <div class="project-kpi-row">
+                <div class="kpi-col">
+                  <span class="kpi-num">+150-450%</span>
+                  <span class="kpi-name">Shelf-Life Boost</span>
+                </div>
+                <div class="kpi-col">
+                  <span class="kpi-num">IS 9845</span>
+                  <span class="kpi-name">FSSAI Migration</span>
+                </div>
+                <div class="kpi-col">
+                  <span class="kpi-num">35%</span>
+                  <span class="kpi-name">PMFME Subsidy Math</span>
+                </div>
+              </div>
+
+              <div class="project-tools-wrap">
+                <span class="project-tool">AI Packaging Recommender</span>
+                <span class="project-tool">Biopolymer Physics</span>
+                <span class="project-tool">React.js</span>
+                <span class="project-tool">Python ML</span>
+                <span class="project-tool">FSSAI / MoFPI Specs</span>
+              </div>
+
+              <div class="project-actions-row">
+                <a href="https://packwise-mofpi.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-launch-live">
+                  Launch Platform
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+                <a href="https://github.com/Aadirajp" target="_blank" rel="noopener noreferrer" class="btn-repo-link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  Repository
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: CLUB AUREX -->
+          <article class="project-item">
+            <div class="project-visual-col">
+              <div class="project-frame">
+                <div class="frame-browser-bar">
+                  <div class="browser-dots">
+                    <span class="b-dot"></span>
+                    <span class="b-dot"></span>
+                    <span class="b-dot"></span>
+                  </div>
+                  <div class="browser-address">https://club-aurex.vercel.app/</div>
+                </div>
+
+                <a href="https://club-aurex.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-img-link">
+                  <img src="assets/images/club-aurex-hero.png" alt="Club AUREX Fitness Platform Screenshot" class="project-real-img" id="aurex-preview-img">
+                </a>
+              </div>
+
+              <!-- Switch Real Screenshots -->
+              <div class="project-secondary-preview">
+                <button class="secondary-thumb-btn active" onclick="switchProjectImage('aurex-preview-img', 'assets/images/club-aurex-hero.png', this)">
+                  Hero Experience
+                </button>
+                <button class="secondary-thumb-btn" onclick="switchProjectImage('aurex-preview-img', 'assets/images/club-aurex-pricing.png', this)">
+                  Membership Tiers
+                </button>
+              </div>
+            </div>
+
+            <div class="project-detail-col">
+              <div class="project-category-tag">High-Performance Web • Dynamic UX</div>
+              <h3 class="project-name">Club AUREX</h3>
+              <p class="project-desc">
+                A modern, high-performance fitness club web application built with fluid micro-interactions, responsive tier selection, and rich multimedia integration. Engineered for lightning-fast loads, intuitive conversion paths, and aesthetic polish across mobile and desktop.
+              </p>
+
+              <div class="project-kpi-row">
+                <div class="kpi-col">
+                  <span class="kpi-num">60 FPS</span>
+                  <span class="kpi-name">Fluid Transitions</span>
+                </div>
+                <div class="kpi-col">
+                  <span class="kpi-num">3 Tiers</span>
+                  <span class="kpi-name">Dynamic Membership</span>
+                </div>
+                <div class="kpi-col">
+                  <span class="kpi-num">100%</span>
+                  <span class="kpi-name">Mobile Responsive</span>
+                </div>
+              </div>
+
+              <div class="project-tools-wrap">
+                <span class="project-tool">JavaScript (ES6+)</span>
+                <span class="project-tool">CSS Grid &amp; Flexbox</span>
+                <span class="project-tool">Video UX</span>
+                <span class="project-tool">Performance Optimization</span>
+                <span class="project-tool">Vercel Edge</span>
+              </div>
+
+              <div class="project-actions-row">
+                <a href="https://club-aurex.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-launch-live">
+                  Explore Live Club
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+                <a href="https://github.com/Aadirajp" target="_blank" rel="noopener noreferrer" class="btn-repo-link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  Repository
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         INTERACTIVE QUANTITATIVE ALPHA TERMINAL
+         =================================================================== -->
+    <section class="section section-alt" id="quant">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge section-tag">WorldQuant BRAIN Research</span>
+          <h2 class="section-title">Quantitative <span class="serif-flourish">Alpha Studio</span></h2>
+          <p class="section-description">
+            Modeling mathematical alpha signals across the US Equities TOP3000 universe using FASTEXPR syntax, statistical arbitrage, and turnover optimization.
+          </p>
+        </div>
+
+        <div class="quant-studio-wrapper">
+          <div class="quant-studio-header">
+            <div class="studio-dots">
+              <span class="studio-dot dot-1"></span>
+              <span class="studio-dot dot-2"></span>
+              <span class="studio-dot dot-3"></span>
+            </div>
+            <div class="studio-title">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="4 17 10 11 14 15 20 9"></polyline>
+                <polyline points="14 9 20 9 20 15"></polyline>
+              </svg>
+              FASTEXPR // ALPHA SIMULATOR [UNIVERSE: TOP3000]
+            </div>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: #8E6B2D;">SUBINDUSTRY NEUTRAL</span>
+          </div>
+
+          <div class="quant-studio-body">
+            <div class="quant-formula-pane">
+              <div class="formula-tabs">
+                <button class="formula-btn active" data-formula="1">Momentum Decay</button>
+                <button class="formula-btn" data-formula="2">Mean Reversion</button>
+                <button class="formula-btn" data-formula="3">Volume Liquidity</button>
+              </div>
+
+              <div class="formula-code-box" id="formula-code-display">
+                <span class="token-comment">// Alpha 01: Multi-day price delta decay neutralized against volume correlation</span><br>
+                <span class="token-func">rank</span>(<span class="token-func">ts_decay_linear</span>(<span class="token-func">delta</span>(<span class="token-var">close</span>, <span class="token-num">5</span>), <span class="token-num">10</span>)) - <span class="token-func">rank</span>(<span class="token-func">correlation</span>(<span class="token-var">vwap</span>, <span class="token-var">volume</span>, <span class="token-num">15</span>))
+              </div>
+
+              <div style="font-size: 0.82rem; color: #9C9588; font-family: var(--font-mono); line-height: 1.6;">
+                <strong>Mechanism:</strong> Evaluates smoothed directional velocity against short-term volume-weighted liquidity divergences. Neutralized across GICS Subindustries to minimize sector exposure.
+              </div>
+            </div>
+
+            <div class="quant-telemetry-pane">
+              <div class="telemetry-row">
+                <span class="t-metric-label">Information Ratio / Sharpe</span>
+                <span class="t-metric-value" id="sharpe-val">2.44</span>
+              </div>
+              <div class="t-bar-wrap">
+                <div class="t-bar-fill" id="sharpe-bar" style="width: 84%;"></div>
+              </div>
+
+              <div class="telemetry-row">
+                <span class="t-metric-label">Fitness Score</span>
+                <span class="t-metric-value" id="fitness-val">1.96</span>
+              </div>
+              <div class="t-bar-wrap">
+                <div class="t-bar-fill" id="fitness-bar" style="width: 78%;"></div>
+              </div>
+
+              <div class="telemetry-row">
+                <span class="t-metric-label">Turnover (Single-Day)</span>
+                <span class="t-metric-value" id="turnover-val">11.8%</span>
+              </div>
+              <div class="t-bar-wrap">
+                <div class="t-bar-fill" id="turnover-bar" style="width: 25%;"></div>
+              </div>
+
+              <div class="telemetry-row" style="border-bottom: none; padding-bottom: 0;">
+                <span class="t-metric-label">Drawdown (Max 5-Yr)</span>
+                <span class="t-metric-value" id="drawdown-val">-4.12%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         EXPERIENCE & LEADERSHIP SECTION
+         =================================================================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge section-tag">Career &amp; Leadership</span>
+          <h2 class="section-title">Experience &amp; <span class="serif-flourish">Consulting</span></h2>
+          <p class="section-description">
+            Combining rigorous quantitative research with active developer community leadership.
+          </p>
+        </div>
+
+        <div class="timeline-wrap">
+
+          <!-- WorldQuant BRAIN -->
+          <div class="timeline-block">
+            <div class="timeline-pin"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta-bar">
+                <div>
+                  <h3 class="timeline-title">Quantitative Research Consultant</h3>
+                  <div class="timeline-org">WorldQuant BRAIN</div>
+                </div>
+                <span class="timeline-badge">2024 — Present</span>
+              </div>
+
+              <p class="timeline-desc">
+                Engaged in developing mathematical alpha signals deployed on the US Equities TOP3000 universe using WorldQuant's proprietary FASTEXPR language.
+              </p>
+
+              <ul class="timeline-bullets">
+                <li>Formulated and validated predictive alpha hypotheses based on fundamental, price-volume, and cross-asset market anomalies.</li>
+                <li>Applied mathematical transforms including moving correlations, decay filters, rank aggregations, and neutralization matrices to isolate idiosyncratic returns.</li>
+                <li>Optimized simulation metrics to maintain Sharpe ratios &gt; 2.0, low turnover decay, and bounded maximum drawdown under strict margin models.</li>
+              </ul>
+
+              <div class="timeline-tags-row">
+                <span class="skill-tag">FASTEXPR</span>
+                <span class="skill-tag">Statistical Arbitrage</span>
+                <span class="skill-tag">Alpha Formulation</span>
+                <span class="skill-tag">Sharpe &amp; Fitness Optimization</span>
+                <span class="skill-tag">US Equities TOP3000</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- NST Developer Club -->
+          <div class="timeline-block">
+            <div class="timeline-pin"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta-bar">
+                <div>
+                  <h3 class="timeline-title">Core Technical Member</h3>
+                  <div class="timeline-org">NST - Developer Club (SDC)</div>
+                </div>
+                <span class="timeline-badge">2024 — Present</span>
+              </div>
+
+              <p class="timeline-desc">
+                Leading software initiatives, architecting developer platforms, and representing Newton School of Technology in national hackathons and open-source sprints.
+              </p>
+
+              <ul class="timeline-bullets">
+                <li>Architected full-stack systems and internal productivity tooling adopted across student developers.</li>
+                <li>Organized deep-dive technical workshops on modern WebGL, AI pipelines, and distributed APIs.</li>
+                <li>Collaborated in high-stakes hackathons, including the Smart India Hackathon (SIH) for the Ministry of Food Processing Industries.</li>
+              </ul>
+
+              <div class="timeline-tags-row">
+                <span class="skill-tag">Full-Stack Development</span>
+                <span class="skill-tag">Team Collaboration</span>
+                <span class="skill-tag">System Design</span>
+                <span class="skill-tag">Community Mentorship</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="timeline-block">
+            <div class="timeline-pin"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta-bar">
+                <div>
+                  <h3 class="timeline-title">B.Tech in Computer Science &amp; Artificial Intelligence</h3>
+                  <div class="timeline-org">Newton School of Technology (NST) x ADYPU, Pune</div>
+                </div>
+                <span class="timeline-badge">2024 — 2028</span>
+              </div>
+
+              <p class="timeline-desc">
+                Rigorous curriculum focused on the foundational mathematics and engineering principles of modern intelligent computing.
+              </p>
+
+              <ul class="timeline-bullets">
+                <li>Focus areas: Data Structures &amp; Algorithms, Deep Learning, Graph Neural Networks, Linear Algebra &amp; Multivariate Calculus.</li>
+                <li>Active involvement in campus coding leagues, research seminars, and cross-functional technology initiatives.</li>
+              </ul>
+
+              <div class="timeline-tags-row">
+                <span class="skill-tag">Computer Science &amp; AI</span>
+                <span class="skill-tag">Linear Algebra</span>
+                <span class="skill-tag">Graph Algorithms</span>
+                <span class="skill-tag">Probability &amp; Statistics</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         CONTACT SECTION
+         =================================================================== -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="contact-wrapper">
+          
+          <div class="contact-info-panel">
+            <span class="badge" style="width: fit-content;">Direct Transmission</span>
+            <h2 class="contact-headline">Let's build something <span class="serif-flourish">extraordinary</span></h2>
+            
+            <p class="contact-text">
+              Whether you’re exploring high-impact AI systems, discussing quantitative alpha research, or looking for a relentless software developer, my inbox is always open.
+            </p>
+
+            <div class="contact-channels">
+              <a href="mailto:adityarajeshpatil08@gmail.com" class="contact-channel-item" id="contact-email-channel">
+                <div class="channel-avatar-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="channel-copy-meta">
+                  <span class="channel-tag-title">Direct Email</span>
+                  <span class="channel-display-val">adityarajeshpatil08@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="https://github.com/Aadirajp" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
+                <div class="channel-avatar-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </div>
+                <div class="channel-copy-meta">
+                  <span class="channel-tag-title">GitHub Profile</span>
+                  <span class="channel-display-val">github.com/Aadirajp</span>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/aditya-patil-6306a5417/" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
+                <div class="channel-avatar-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </div>
+                <div class="channel-copy-meta">
+                  <span class="channel-tag-title">LinkedIn Connection</span>
+                  <span class="channel-display-val">linkedin.com/in/aditya-patil</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="pune-time-pill">
+              <span class="pune-dot"></span>
+              <span>Pune, Maharashtra (IST): <strong id="live-ist-clock">16:30 IST</strong></span>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-panel">
+            <form id="portfolio-contact-form">
+              <div class="input-block">
+                <label for="contact-name" class="input-label">Your Name</label>
+                <input type="text" id="contact-name" class="text-input" placeholder="e.g. Elena Rostova" required>
+              </div>
+
+              <div class="input-block" style="margin-top: 14px;">
+                <label for="contact-email" class="input-label">Email Address</label>
+                <input type="email" id="contact-email" class="text-input" placeholder="name@domain.com" required>
+              </div>
+
+              <div class="input-block" style="margin-top: 14px;">
+                <label for="contact-subject" class="input-label">Topic / Opportunity</label>
+                <input type="text" id="contact-subject" class="text-input" placeholder="Quant Research / AI Platform / Collaboration" required>
+              </div>
+
+              <div class="input-block" style="margin-top: 14px;">
+                <label for="contact-message" class="input-label">Message</label>
+                <textarea id="contact-message" class="text-area" placeholder="Tell me about your vision or project requirements..." required></textarea>
+              </div>
+
+              <div class="feedback-alert" id="form-feedback-msg" style="margin-top: 14px;"></div>
+
+              <button type="submit" class="btn btn-primary" id="form-submit-btn" style="width: 100%; margin-top: 16px;">
+                Send Message
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================
+       FOOTER
+       =================================================================== -->
+  <footer class="editorial-footer">
+    <div class="container">
+      <div class="footer-hairline"></div>
+      
+      <div class="footer-content-row">
+        <div class="footer-brand-title">
+          Aditya Patil <span>/ Aadi.dev</span>
+        </div>
+
+        <div class="footer-credits">
+          Designed with editorial cream aesthetics, vanilla web standards, &amp; real project telemetry.
+        </div>
+
+        <a href="#hero" class="btn-scroll-top" id="scroll-to-top">
+          Back to Top ↑
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       RESUME MODAL
+       =================================================================== -->
+  <div class="modal-backdrop" id="resume-modal" role="dialog" aria-modal="true" aria-labelledby="resume-title">
+    <div class="resume-paper-card">
+      <div class="resume-header">
+        <div class="resume-header-title" id="resume-title">
+          Aditya Patil — Curriculum Vitae
+        </div>
+        <button class="close-modal-btn" id="close-resume-btn" aria-label="Close CV Modal">✕</button>
+      </div>
+
+      <div class="resume-body-content">
+        <!-- Summary -->
+        <div class="cv-block">
+          <div class="cv-block-title">Executive Overview</div>
+          <p class="cv-entry-summary">
+            Software Developer and Quantitative Research Consultant pursuing B.Tech in CS &amp; AI at Newton School of Technology. Proven track record architecting forensic Graph Neural Network systems, Government of India SIH platforms, and formulaic alpha signals across US Equities TOP3000.
+          </p>
+        </div>
+
+        <!-- Experience -->
+        <div class="cv-block">
+          <div class="cv-block-title">Experience &amp; Roles</div>
+          
+          <div class="cv-entry">
+            <div class="cv-entry-head">
+              <span class="cv-entry-role">Quantitative Research Consultant</span>
+              <span class="cv-entry-date">2024 — Present</span>
+            </div>
+            <div class="cv-entry-company">WorldQuant BRAIN</div>
+            <p class="cv-entry-summary">
+              Engineering mathematical alpha signals in FASTEXPR syntax across the US Equities TOP3000 universe. Applying mathematical transformations, momentum decay, and subindustry neutralization to maintain high Sharpe and low turnover.
+            </p>
+          </div>
+
+          <div class="cv-entry">
+            <div class="cv-entry-head">
+              <span class="cv-entry-role">Core Technical Member</span>
+              <span class="cv-entry-date">2024 — Present</span>
+            </div>
+            <div class="cv-entry-company">NST - Developer Club (SDC)</div>
+            <p class="cv-entry-summary">
+              Collaborating on campus technology infrastructure, organizing developer sprints, and building high-scale full-stack applications.
+            </p>
+          </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="cv-block">
+          <div class="cv-block-title">Production Systems</div>
+          
+          <div class="cv-entry">
+            <div class="cv-entry-head">
+              <span class="cv-entry-role">SURAAG AI — Crime Forensic Intelligence Platform</span>
+              <span class="cv-entry-date">Live System</span>
+            </div>
+            <p class="cv-entry-summary">
+              Graph Neural Networks, Bayesian multi-sensor fusion, and 3D Three.js physics trajectory calculations with 94.2% AI confidence score.
+            </p>
+          </div>
+
+          <div class="cv-entry">
+            <div class="cv-entry-head">
+              <span class="cv-entry-role">PACKWISE AI — MoFPI Food Packaging Platform</span>
+              <span class="cv-entry-date">MoFPI / SIH26236</span>
+            </div>
+            <p class="cv-entry-summary">
+              Engineered sustainable bio-polymer food packaging recommendation system to replace single-use plastics and increase crop shelf-life by +150-450%.
+            </p>
+          </div>
+
+          <div class="cv-entry">
+            <div class="cv-entry-head">
+              <span class="cv-entry-role">Club AUREX — High-Performance Fitness Platform</span>
+              <span class="cv-entry-date">Live Web App</span>
+            </div>
+            <p class="cv-entry-summary">
+              Modern full-stack fitness club platform with dynamic membership tier calculations and 60 FPS transitions.
+            </p>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="cv-block">
+          <div class="cv-block-title">Education</div>
+          <div class="cv-entry">
+            <div class="cv-entry-head">
+              <span class="cv-entry-role">B.Tech in Computer Science &amp; Artificial Intelligence</span>
+              <span class="cv-entry-date">2024 — 2028</span>
+            </div>
+            <div class="cv-entry-company">Newton School of Technology (NST) x ADYPU, Pune</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="resume-footer" style="flex-wrap: wrap; gap: 10px;">
+        <a href="assets/docs/Aditya_Patil_Resume.pdf" download="Aditya_Patil_Resume.pdf" class="btn btn-primary btn-sm">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Download Resume (PDF)
+        </a>
+        <a href="assets/docs/WorldQuant_Gold_Certificate.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="7"></circle>
+            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+          </svg>
+          WorldQuant Gold Certificate
+        </a>
+        <button class="btn btn-secondary btn-sm" onclick="window.print()">
+          Print View
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-badge" id="toast-badge">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#DFBF82" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="toast-text">Email copied to clipboard!</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
